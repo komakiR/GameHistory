@@ -1,0 +1,14 @@
+app/
+    assets/
+    channels/
+    controllers/
+    helpers/
+    jobs/
+    mailers/
+    models/
+  * views/
+        layouts/
+      * tweets/
+            index.html.erb
+            show.html.erb
+            new.html.erb
