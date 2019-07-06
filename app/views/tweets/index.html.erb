@@ -1,8 +1,18 @@
 <h1>Tweets#index</h1>
 
-<%= link_to  "New Tweet", new_tweet_path %>
+<div class="wrapper">
+      <!-- Left View -->
+    <div class="new LeftView">
+      <%= link_to  "New Tweet", new_tweet_path %>
+    </div>
+    <!-- Right View -->
+    <div class="show RigthView">
+        <div class="show">
+          <% @tweets.each do |tweet| %>
+            <p><%= tweet.body %></p>
+            <%= link_to 'Show',tweet%>
+          <% end %>
+        </div>
+    </div>
 
-<% @tweets.each do |tweet| %>
-  <p><%= tweet.body %></p>
-  <%= link_to 'Show', tweet %>
-<% end %>
+</div>
