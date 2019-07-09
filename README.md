@@ -1,24 +1,53 @@
-# README
+tweet.css 変更
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+/* View関係 */
+body {
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+}
+.wrapper{
+  display: flex;
+}
 
-Things you may want to cover:
+.column{
+    height: 100vh;
+    width: 100%;
 
-* Ruby version
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
-* System dependencies
+.LeftView{
 
-* Configuration
+  width: 50%;
+  background: url(../image/back.jpg) no-repeat top center;
 
-* Database creation
+}
 
-* Database initialization
+.RigthView{
+    /* background: blue no-repeat top center; */
+    width: 50%;
+}
 
-* How to run the test suite
+index.html 変更
+<div class="wrapper">
+      <!-- Left View -->
 
-* Services (job queues, cache servers, search engines, etc.)
+    <div class="new LeftView">
+      <%= link_to  "New Tweet", new_tweet_path %>
+      <iframe src="/tweets/new" frameborder="0"></iframe>
+    </div>
+    <!-- Right View -->
+    <div class="show RigthView">
+        <div class="show">
+          <% @tweets.each do |tweet| %>
+            <p><%= tweet.body %></p>
+            <%= link_to 'Show',tweet%>
+          <% end %>
+        </div>
+    </div>
 
-* Deployment instructions
-
-* ...
+</div>
