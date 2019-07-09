@@ -1,18 +1,8 @@
-<h1>Tweets#index</h1>
+<h1>なにつぶやく？</h1>
 
-<div class="wrapper">
-      <!-- Left View -->
-    <div class="new LeftView">
-      <%= link_to  "New Tweet", new_tweet_path %>
-    </div>
-    <!-- Right View -->
-    <div class="show RigthView">
-        <div class="show">
-          <% @tweets.each do |tweet| %>
-            <p><%= tweet.body %></p>
-            <%= link_to 'Show',tweet%>
-          <% end %>
-        </div>
-    </div>
+<%= link_to  "書き込み", new_tweet_path %>
 
-</div>
+<% @tweets.each do |tweet| %>
+  <p><%= tweet.body %></p>
+  <%= link_to '詳細', tweet %>
+<% end %>
