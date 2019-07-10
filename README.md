@@ -75,6 +75,7 @@ li a:hover:not(.active) {
     width: 50%;
 }
 
+<!--
 <header class = "site-header">
   <ul class = "font">
 	   <li><a class="active" href="#home">Home</a></li>
@@ -84,19 +85,17 @@ li a:hover:not(.active) {
      <li class = "last"><a>GameHistry</a></li>
 
   </ul>
-<!--
-  <div class="font">
-    <h1><big><big>GameHistory</big></big></h1>
-  </div>
--->
 </header>
+-->
+
 <body>
   <div class="wrapper">
-        <!-- Left View -->
+        <!-- Left View 
         <div class="LeftView">
           <iframe src="/tweets/new" frameborder="0" width="50%" height="100%"></iframe>
         </div>
-  <!-- Right View -->
+-->
+  <!-- Right View 
   <div class="RigthView">
     <div class="show">
       <% @tweets.each do |tweet| %>
@@ -108,5 +107,6 @@ li a:hover:not(.active) {
 
 </div>
 </body>
+-->
 インデックス.html
 
