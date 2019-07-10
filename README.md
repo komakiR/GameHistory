@@ -75,38 +75,36 @@ li a:hover:not(.active) {
     width: 50%;
 }
 
-<!--
-<header class = "site-header">
-  <ul class = "font">
-	   <li><a class="active" href="#home">Home</a></li>
-	   <li><a href="#news">Tweet</a></li>
-	   <li><a href="#contact">View</a></li>
-     <li><a href="#about">About</a></li>
-     <li class = "last"><a>GameHistry</a></li>
 
-  </ul>
-</header>
--->
-
-<body>
-  <div class="wrapper">
-        <!-- Left View 
-        <div class="LeftView">
-          <iframe src="/tweets/new" frameborder="0" width="50%" height="100%"></iframe>
-        </div>
--->
-  <!-- Right View 
-  <div class="RigthView">
-    <div class="show">
-      <% @tweets.each do |tweet| %>
-      <p><%= tweet.body %></p>
-      <%= link_to 'Show',tweet%>
-      <% end %>
-    </div>
-  </div>
-
-</div>
-</body>
--->
-インデックス.html
+/<header class = "site-header">
+/  <ul class = "font">
+/	   <li><a class="active" href="#home">Home</a></li>
+/	   <li><a href="#news">Tweet</a></li>
+/	   <li><a href="#contact">View</a></li>
+/     <li><a href="#about">About</a></li>
+/     <li class = "last"><a>GameHistry</a></li>
+/
+/  </ul>
+/</header>
+/
+/<body>
+/  <div class="wrapper">
+/        <!-- Left View -->
+/        <div class="LeftView">
+/          <iframe src="/tweets/new" frameborder="0" width="50%" height="100%"></iframe>
+/        </div>
+/
+/  <!-- Right View -->
+/  <div class="RigthView">
+/    <div class="show">
+/      <% @tweets.each do |tweet| %>
+/      <p><%= tweet.body %></p>
+/      <%= link_to 'Show',tweet%>
+/      <% end %>
+/    </div>
+/  </div>
+/
+/</div>
+/</body>
+/インデックス.html
 
