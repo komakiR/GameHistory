@@ -1,20 +1,15 @@
 <h1>Create a new tweet</h1>
 
+<link rel="stylesheet" href="style.css">
 <!-- ADD -->
 <%= render "form", tweet: @tweet %>
 <!-- ADD -->
 
-<%= link_to  "Back", tweets_path %>
-
 <!-- REMOVE -->
  <%= form_with(model: @tweet, local: true) do |form| %>
-  <div>
-    <h3><%= form.label :body %></h3>
-    <%= form.text_area :body %>
-  </div>
 
   <div>
-    <%= form.submit %>
+
   </div>
-<% end %> 
+<% end %>
 <!-- REMOVE -->

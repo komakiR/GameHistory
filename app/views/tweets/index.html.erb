@@ -1,8 +1,33 @@
-<h1>なにつぶやく？</h1>
+<header class = "site-header">
+  <ul class = "font">
+	   <li><a class="active" href="#home">Home</a></li>
+	   <li><a href="#news">Tweet</a></li>
+	   <li><a href="#contact">View</a></li>
+     <li><a href="#about">About</a></li>
+     <li class = "last"><a>GameHistry</a></li>
 
-<%= link_to  "書き込み", new_tweet_path %>
+  </ul>
+<!--
+  <div class="font">
+    <h1><big><big>GameHistory</big></big></h1>
+  </div>
+-->
+</header>
+<body>
+  <div class="wrapper">
+        <!-- Left View -->
+        <div class="LeftView">
+          <iframe src="/tweets/new" frameborder="0" width="50%" height="100%"></iframe>
+        </div>
+  <!-- Right View -->
+  <div class="RightView">
+    <div class="show">
+      <% @tweets.each do |tweet| %>
+      <p><%= tweet.body %></p>
+      <%= link_to 'Show',tweet%>
+      <% end %>
+    </div>
+  </div>
 
-<% @tweets.each do |tweet| %>
-  <p><%= tweet.body %></p>
-  <%= link_to '詳細', tweet %>
-<% end %>
+</div>
+</body>

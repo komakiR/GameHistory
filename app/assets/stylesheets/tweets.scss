@@ -1,3 +1,107 @@
-// Place all the styles related to the tweets controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* View関係 */
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #FAE8DD;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1b2538;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+li:last-child {
+	border-right: none;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:24px;
+  padding-right:24px;
+}
+li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+.active {
+	background-color: #da3c41;
+}
+.last{
+  float: inherit;
+}
+
+.site-header{
+    position: fixed;
+    width: 100%;
+}
+.font{
+  text-align: center;
+  font-family: 'times new roman';
+}
+
+.wrapper{
+  display: flex;
+}
+
+.column{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.LeftView{
+  margin-top:100px;
+  margin-left:50px;
+  width: 50%;
+  background: url(../image/back.jpg) no-repeat top center;
+}
+
+
+.RightView{
+    /* background: blue no-repeat top center; */
+    width: 50%;
+    margin:2em 0;
+    margin-top:100px;
+    margin-right: 30px;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #00B8AB;
+    border-radius: 3px 0 3px 0;
+    background-color:#ffff;
+}
+
+.RightView:before,.RightView:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #00B8AB;
+    border-radius: 50%;
+}
+.RightView:after {
+    top:-12px;
+    left:-12px;
+}
+.RightView:before {
+    bottom:-12px;
+    right:-12px;
+}
+.RightView p {
+    margin: 0;
+    padding: 0;
+}
